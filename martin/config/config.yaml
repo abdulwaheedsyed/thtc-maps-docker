@@ -1,0 +1,24 @@
+keep_alive: 75
+listen_addresses: '0.0.0.0:3000'
+base_path: /
+worker_processes: 8
+cache_size: 512
+preferred_encoding: gzip
+web_ui: disable
+
+# postgres:
+#   connection_string: postgresql://postgres:password@db/db
+#   default_srid: 4326
+
+mbtiles:
+  paths:
+    - /data/mbtiles
+
+fonts:
+  - /data/fonts
+
+sprites:
+  - /data/sprites
+
+styles:
+  - /data/styles
